@@ -96,7 +96,7 @@ public:
                 iterator(data_ + i)->~T();
             alloc.deallocate(data_, capacity_);
             data_ = newdata;
-            capacity_ = size;
+            capacity_ = size_;
         }
     }
 
