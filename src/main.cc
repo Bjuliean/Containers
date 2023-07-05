@@ -1,5 +1,6 @@
 #include <iostream>
 #include "vector/vector.hpp"
+#include "list/list.hpp"
 
 #define SIZE 100
 
@@ -38,33 +39,56 @@ private:
 
 int main() {
 
-    s21::vector<int> a;
+// s21::list<int> a = {1, 2, 3, 4};
 
-    for(int i = 0; i < 17; i++)
-        a.push_back(i);
+// for(int i = 0; i < 10; i++)
+//     a.push_front(i);
 
-    a.pop_back();
+// a.out();
 
-    a.reserve(100);
+// std::cout << "======================" << std::endl;
 
-    s21::vector<int>::iterator it = a.begin();
+// a.pop_back();
+// a.pop_front();
+// a.out();
 
-    it += 3;
+s21::list<int> a = {1};
 
-    a.insert(it, 123);
+//a.pop_front();
 
-    it = a.end();
+a.out();
 
-    it -= 3;
 
-    a.erase(it);
 
-    //a.out();
 
-    s21::vector<int> b(a);
+//vector
+    // s21::vector<int> a;
 
-    for(int i : b)
-        std::cout << b[i] << std::endl;
+    // for(int i = 0; i < 17; i++)
+    //     a.push_back(i);
+
+    // a.pop_back();
+
+    // a.reserve(100);
+
+    // s21::vector<int>::iterator it = a.begin();
+
+    // it += 3;
+
+    // a.insert(it, 123);
+
+    // it = a.end();
+
+    // it -= 3;
+
+    // a.erase(it);
+
+    // //a.out();
+
+    // s21::vector<int> b(a);
+
+    // for(int i : b)
+    //     std::cout << b[i] << std::endl;
 
     return 0;
 }
